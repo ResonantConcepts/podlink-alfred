@@ -2,6 +2,8 @@
 
 PodLink generates a free landing page for every podcast to help listeners find shows in their favorite podcast app. This Alfred workflow brings the PodLink autocomplete straight to your launcher. [Alfred Powerpack](https://www.alfredapp.com/powerpack/) is required to run Alfred Workflows.
 
+![Demo gif](demo-640.gif)
+
 ## Installation
 
 1. [**Download the latest release**](https://github.com/ResonantConcepts/podlink-alfred/releases)
