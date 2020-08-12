@@ -32,15 +32,15 @@ foreach ($results as $sugg) {
     $icon = $sugg->artworkUrl100 === null ? ICON : $sugg->artworkUrl100;
     $podlinkUrl = 'https://pod.link/'.$iTunesID;
     $links = array(
-        "apple" => 'https://podcasts.apple.com/podcast/id'.$iTunesID.'?ct=podlink&mt=2&app=podcast&ls=1',
-        "breaker" => "https://www.breaker.audio/shows?feed_url=".urlencode($feedUrl),
-        "castbox" => 'https://castbox.fm/vic/'.$iTunesID,
-        "castro" => 'https://castro.fm/itunes/'.$iTunesID,
-        "google" => "https://podcasts.google.com/?feed=".base64_encode($feedUrl),
-        "overcast" => 'https://overcast.fm/itunes'.$iTunesID,
-        "podcastaddict" => 'https://podcastaddict.com/feed/'.urlencode($feedUrl),
-        "pocketcasts" => 'https://pca.st/itunes/'.$iTunesID,
-        "rss" => $feedUrl
+        'apple' => 'https://podcasts.apple.com/podcast/id'.$iTunesID.'?ct=podlink&mt=2&app=podcast&ls=1',
+        'breaker' => 'https://www.breaker.audio/shows?feed_url='.urlencode($feedUrl),
+        'castbox' => 'https://castbox.fm/vic/'.$iTunesID,
+        'castro' => 'https://castro.fm/itunes/'.$iTunesID,
+        'google' => 'https://podcasts.google.com/?feed='.base64_encode($feedUrl),
+        'overcast' => 'https://overcast.fm/itunes'.$iTunesID,
+        'podcastaddict' => 'https://podcastaddict.com/feed/'.urlencode($feedUrl),
+        'pocketcasts' => 'https://pca.st/itunes/'.$iTunesID,
+        'rss' => $feedUrl
     );
     $externalUrl = array_key_exists($app, $links) ? $links[$app] : $podlinkUrl;
 
