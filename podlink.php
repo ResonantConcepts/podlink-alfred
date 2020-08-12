@@ -13,6 +13,13 @@ $wf = new Workflow;
 $download_dir = getenv('alfred_workflow_cache').'/podlink';
 initDownloadDir(true);
 
+if (strpos($query, ' ') !== false) {
+    $parts = explode(' ', $query);
+    $app = array_shift($parts);
+    $query = implode(' ', $parts);
+}
+
+if (strlen($query)>1){
 $response = request('https://itunes.apple.com/search?term='.urlencode($query).'&limit=10&media=podcast');
 $json = json_decode($response);
 $results = $json->results;
@@ -25,23 +32,25 @@ foreach ($results as $sugg) {
     $icon = $sugg->artworkUrl100 === null ? ICON : $sugg->artworkUrl100;
     $podlinkUrl = 'https://pod.link/'.$iTunesID;
     $links = array(
-        "applepodcasts" => 'https://podcasts.apple.com/podcast/id'.$iTunesID.'?ct=podlink&mt=2&app=podcast&ls=1',
+        "apple" => 'https://podcasts.apple.com/podcast/id'.$iTunesID.'?ct=podlink&mt=2&app=podcast&ls=1',
+        "breaker" => "https://www.breaker.audio/shows?feed_url=".urlencode($feedUrl),
+        "castbox" => 'https://castbox.fm/vic/'.$iTunesID,
         "castro" => 'https://castro.fm/itunes/'.$iTunesID,
-        "googlepodcasts" => "https://podcasts.google.com/?feed=".base64_encode($iTunesID),
+        "google" => "https://podcasts.google.com/?feed=".base64_encode($feedUrl),
         "overcast" => 'https://overcast.fm/itunes'.$iTunesID,
+        "podcastaddict" => 'https://podcastaddict.com/feed/'.urlencode($feedUrl),
         "pocketcasts" => 'https://pca.st/itunes/'.$iTunesID,
         "rss" => $feedUrl
     );
-    $alternate = array_key_exists($favorite, $links) ? $favorite : "rss";
-    
+    $externalUrl = array_key_exists($app, $links) ? $links[$app] : $podlinkUrl;
+
     $wf->result()
         ->uid($iTunesID)
         ->title($showName)
-        ->subtitle($artistName)
-        ->arg($podlinkUrl)
-        ->cmd('Open in your favorite player', $links[$alternate])
+        ->subtitle($externalUrl)
+        ->arg($externalUrl)
         ->icon(saveAndReturnFile($icon))
         ->autocomplete($showName);
 }
-
+}
 echo $wf->output();

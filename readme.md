@@ -17,7 +17,7 @@ PodLink generates a free landing page for every podcast to help listeners find s
 3. Invoke the workflow by typing the keyword `pod` followed by your search.
 4. Results will appear including the artwork, title, and publisher.
 5. Select a result to open the PodLink page in your browser.
-6. Alternatively, hold down `command` while selecting a result to directly open the show with your favorite player.
+6. Alternatively, hold down `⌥ alt/option` while selecting a result to directly open the show with your favorite player.
 
 ## Credit 
 
