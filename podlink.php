@@ -30,25 +30,43 @@ foreach ($results as $sugg) {
     $showName = $sugg->collectionName;
     $artistName = $sugg->artistName;
     $icon = $sugg->artworkUrl100 === null ? ICON : $sugg->artworkUrl100;
-    $podlinkUrl = 'https://pod.link/'.$iTunesID;
+    $subtitles = array(
+        'podlink' => "Open in PodLink",
+        'apple' => "Open in Apple Podcasts",
+        'breaker' => "Open in Breaker",
+        'castbox' => "Open in Castbox",
+        'castro' => "Open in Castro",
+        'google' => "Open in Google Podcasts",
+        'overcast' => "Open in Overcast",
+        'podcastaddict' => "Open in Podcast Addict",
+        'pocketcasts' => "Open in Pocketcasts",
+        'spotify' => "Open in Spotify",
+        'stitcher' => "Open in Stitcher",
+        'rss' => "Open in Stitcher"
+    );
     $links = array(
-        'apple' => 'https://podcasts.apple.com/podcast/id'.$iTunesID.'?ct=podlink&mt=2&app=podcast&ls=1',
-        'breaker' => 'https://www.breaker.audio/shows?feed_url='.urlencode($feedUrl),
-        'castbox' => 'https://castbox.fm/vic/'.$iTunesID,
-        'castro' => 'https://castro.fm/itunes/'.$iTunesID,
-        'google' => 'https://podcasts.google.com/?feed='.base64_encode($feedUrl),
-        'overcast' => 'https://overcast.fm/itunes'.$iTunesID,
-        'podcastaddict' => 'https://podcastaddict.com/feed/'.urlencode($feedUrl),
-        'pocketcasts' => 'https://pca.st/itunes/'.$iTunesID,
+        'podlink' => "https://pod.link/{$iTunesID}",
+        'apple' => "https://pod.link/{$iTunesID}/listen/applepodcasts",
+        'breaker' => "https://pod.link/{$iTunesID}/listen/breaker",
+        'castbox' => "https://pod.link/{$iTunesID}/listen/castbox",
+        'castro' => "https://pod.link/{$iTunesID}/listen/castro",
+        'google' => "https://pod.link/{$iTunesID}/listen/googlepodcasts",
+        'overcast' => "https://pod.link/{$iTunesID}/listen/overcast",
+        'podcastaddict' => "https://pod.link/{$iTunesID}/listen/podcastaddict",
+        'pocketcasts' => "https://pod.link/{$iTunesID}/listen/pocketcasts",
+        'spotify' => "https://pod.link/{$iTunesID}/listen/spotify",
+        'stitcher' => "https://pod.link/{$iTunesID}/listen/stitcher",
         'rss' => $feedUrl
     );
-    $externalUrl = array_key_exists($app, $links) ? $links[$app] : $podlinkUrl;
+    $argument = array_key_exists($app, $links) ? $links[$app] : $links['podlink'];
+    $subtitle = array_key_exists($app, $subtitles) ? $subtitles[$app] : $subtitles['podlink'];
 
     $wf->result()
         ->uid($iTunesID)
         ->title($showName)
-        ->subtitle($externalUrl)
-        ->arg($externalUrl)
+        ->subtitle($subtitle)
+        ->arg($argument)
+        ->cmd($argument, $argument)
         ->icon(saveAndReturnFile($icon))
         ->autocomplete($showName);
 }
