@@ -20,16 +20,16 @@ if (strpos($query, ' ') !== false) {
 }
 
 if (strlen($query)>1){
-    $response = request('https://itunes.apple.com/search?term='.urlencode($query).'&limit=10&media=podcast');
+    $response = request('https://itunes.apple.com/search?term='.urlencode($query).'&limit=9&media=podcast');
     $json = json_decode($response);
     $results = $json->results;
 
-    foreach ($results as $sugg) {
-        $iTunesID = $sugg->collectionId;
-        $feedUrl = $sugg->feedUrl;
-        $showName = $sugg->collectionName;
-        $artistName = $sugg->artistName;
-        $icon = $sugg->artworkUrl100 === null ? ICON : $sugg->artworkUrl100;
+    foreach ($results as $result) {
+        $iTunesID = $result->collectionId;
+        $feedUrl = $result->feedUrl;
+        $showName = $result->collectionName;
+        $artistName = $result->artistName;
+        $icon = $result->artworkUrl100 === null ? ICON : $result->artworkUrl100;
         $subtitles = array(
             'podlink' => "Open in PodLink",
             'apple' => "Open in Apple Podcasts",
@@ -43,7 +43,7 @@ if (strlen($query)>1){
             'pocketcasts' => "Open in Pocketcasts",
             'spotify' => "Open in Spotify",
             'stitcher' => "Open in Stitcher",
-            'rss' => "Open in Stitcher"
+            'rss' => "Open RSS Feed"
         );
         $links = array(
             'podlink' => "https://pod.link/{$iTunesID}",
