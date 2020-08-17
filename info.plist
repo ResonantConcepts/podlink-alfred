@@ -59,8 +59,6 @@
 				<string>Searching...</string>
 				<key>script</key>
 				<string>$query = "{query}";
-$favorite = getenv('favorite');
-
 require_once('podlink.php');</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
