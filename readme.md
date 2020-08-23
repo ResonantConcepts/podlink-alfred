@@ -4,7 +4,7 @@ This workflow lets you search for a podcast with search suggestions (powered by 
 ![Demo gif](demo-640.gif)
 
 ## Installation
-**<a download href="https://github.com/ResonantConcepts/alfred-podcast/releases/latest/download/alfred-podcast.alfredworkflow">Download and install the latest release</a>** 
+**<a download href="https://github.com/ResonantConcepts/alfred-podcast/releases/latest/download/podlink-alfred.alfredworkflow">Download and install the latest release</a>** 
 
 _You will need [Alfred Powerpack](https://www.alfredapp.com/powerpack/) to enable this workflow._
 
