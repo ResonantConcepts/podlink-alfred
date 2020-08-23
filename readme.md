@@ -6,7 +6,7 @@ This workflow lets you search for a podcast with search suggestions (powered by 
 ## Installation
 **<a download href="https://github.com/ResonantConcepts/alfred-podcast/releases/latest/download/podlink-alfred.alfredworkflow">Download and install the latest release</a>** 
 
-_You will need [Alfred Powerpack](https://www.alfredapp.com/powerpack/) to enable this workflow._
+_You will need the [Powerpack](https://www.alfredapp.com/powerpack/) to enable this workflow._
 
 ## Basic Usage
 1. Invoke Alfred and type the keyword `pod` followed by your query. Results, including the artwork and title of the podcast, will populate below.
@@ -38,9 +38,9 @@ If you prefer to open a link directly to a specific platform, you can specify a 
 - rss
 
 ## Known Issues
-PodLink sources shows from the Apple Podcasts directory. If a show is not listed there, it will not appear in search results.
+PodLink sources results from the Apple Podcasts directory. If a podcast is not listed there, it will not appear in search results.
 
-Not all shows are available on all platforms. In the event that a show is not found on an platform, the link will redirect back to the PodLink page for that show. For example, `pod spotify exponent` isn't on Spotify, so the link will direct to PodLink instead.
+Not all podcasts are necessarily available on all platforms. For example, `pod spotify exponent` isn't on Spotify, but Exponent will still appear in the search results. If PodLink cannot find a match on an platform, the link will redirect back to the PodLink page for that podcast.
 
 ## Credits
 - Hat tip to [Chris Messina](https://twitter.com/chrismessina) for the nudge to create this!
