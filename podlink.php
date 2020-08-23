@@ -15,7 +15,7 @@ initDownloadDir(true);
 
 if (strpos($query, ' ') !== false) {
     $parts = explode(' ', $query);
-    $app = array_shift($parts);
+    $platform = array_shift($parts);
     $query = implode(' ', $parts);
 }
 
@@ -49,19 +49,28 @@ if (strlen($query)>1){
             'podlink' => "https://pod.link/{$iTunesID}",
             'apple' => "https://pod.link/{$iTunesID}/listen/applepodcasts",
             'breaker' => "https://pod.link/{$iTunesID}/listen/breaker",
+            'bullhorn' => "https://pod.link/{$iTunesID}/listen/bullhorn",
             'castbox' => "https://pod.link/{$iTunesID}/listen/castbox",
             'castro' => "https://pod.link/{$iTunesID}/listen/castro",
             'google' => "https://pod.link/{$iTunesID}/listen/googlepodcasts",
+            'listennotes' => "https://pod.link/{$iTunesID}/listen/listennotes",
             'overcast' => "https://pod.link/{$iTunesID}/listen/overcast",
             'playerfm' => "https://pod.link/{$iTunesID}/listen/playerfm",
-            'podcastaddict' => "https://pod.link/{$iTunesID}/listen/podcastaddict",
             'pocketcasts' => "https://pod.link/{$iTunesID}/listen/pocketcasts",
+            'podbean' => "https://pod.link/{$iTunesID}/listen/podbean",
+            'podcastaddict' => "https://pod.link/{$iTunesID}/listen/podcastaddict",
+            'podcastguru' => "https://pod.link/{$iTunesID}/listen/podcastguru",
+            'podchaser' => "https://pod.link/{$iTunesID}/listen/podchaser",
+            'podhero' => "https://pod.link/{$iTunesID}/listen/podhero",
+            'podknife' => "https://pod.link/{$iTunesID}/listen/podknife",
+            'podnews' => "https://pod.link/{$iTunesID}/listen/podnews",
+            'radiopublic' => "https://pod.link/{$iTunesID}/listen/radiopublic",
             'spotify' => "https://pod.link/{$iTunesID}/listen/spotify",
             'stitcher' => "https://pod.link/{$iTunesID}/listen/stitcher",
             'rss' => $feedUrl
         );
-        $argument = array_key_exists($app, $links) ? $links[$app] : $links['podlink'];
-        $subtitle = array_key_exists($app, $subtitles) ? $subtitles[$app] : $subtitles['podlink'];
+        $argument = array_key_exists($platform, $links) ? $links[$platform] : $links['podlink'];
+        $subtitle = array_key_exists($platform, $subtitles) ? $subtitles[$platform] : $subtitles['podlink'];
 
         $wf->result()
             ->uid($iTunesID)
