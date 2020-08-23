@@ -101,7 +101,7 @@ require_once('podlink.php');</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>PodLink generates a free landing page for every podcast to help listeners find shows in their favorite podcast app. This Alfred workflow brings the PodLink autocomplete straight to your launcher.</string>
+	<string>This workflow lets you search for a podcast with search suggestions (powered by PodLink) right from your Alfred launcher.</string>
 	<key>uidata</key>
 	<dict>
 		<key>0FD4B432-1B7A-473A-8F9C-65A35045A228</key>
@@ -124,6 +124,6 @@ require_once('podlink.php');</string>
 	<key>version</key>
 	<string>1.3</string>
 	<key>webaddress</key>
-	<string>https://github.com/ResonantConcepts/alfred-podcast</string>
+	<string>https://github.com/ResonantConcepts/podlink-alfred</string>
 </dict>
 </plist>
