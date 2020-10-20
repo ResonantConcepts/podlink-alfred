@@ -40,7 +40,7 @@ function download(filename, url, callback) {
 			uid: result.collectionId,
 			title: result.collectionName,
 			subtitle: `${result.artistName} · Genre: ${result.primaryGenreName} · Episodes: ${trackCount}`,
-			arg: `https://pod.link/${result.collectionId}`,
+			arg: result.collectionId,
 			icon: {
 				path: iconPath
 			}
