@@ -61,11 +61,11 @@
 	<key>createdby</key>
 	<string>Nathan Gathright</string>
 	<key>description</key>
-	<string>Search PodLink for podcasts</string>
+	<string>Search for podcasts (powered by PodLink)</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>PodLink Search</string>
+	<string>Podcast Search</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -319,6 +319,10 @@ fi</string>
 			<integer>155</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.4.0</string>
 	<key>webaddress</key>
 	<string>https://alfred.pod.link/</string>
 </dict>

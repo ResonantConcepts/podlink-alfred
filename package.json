@@ -1,6 +1,6 @@
 {
-  "name": "alfred-podlink",
-  "version": "1.0.0",
+  "name": "podlink-alfred",
+  "version": "1.4.0",
   "description": "Search for podcasts from Alfred",
   "license": "MIT",
   "repository": "ResonantConcepts/podlink-alfred",

@@ -5,7 +5,7 @@ Search for podcasts from Alfred (powered by [PodLink](https://pod.link/))
 ![](demo.gif)
 
 ## Installation
-**<a download href="https://github.com/ResonantConcepts/podlink-alfred/releases/latest/download/podlink-alfred.alfredworkflow">Download and install the latest release</a>** 
+**<a download href="https://github.com/ResonantConcepts/podlink-alfred/releases/latest/download/podcast-search.alfredworkflow">Download and install the latest release</a>** 
 
 _You will need the [Alfred Powerpack](https://www.alfredapp.com/powerpack/) to enable this workflow._
 
