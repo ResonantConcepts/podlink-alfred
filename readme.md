@@ -1,11 +1,13 @@
 # Podcast Search for Alfred
 
-Search for podcasts from Alfred (powered by [PodLink](https://pod.link/)).
+Search for podcasts from Alfred (powered by [PodLink](https://pod.link/))
+
+![](demo.gif)
 
 ## Installation
 **<a download href="https://github.com/ResonantConcepts/podlink-alfred/releases/latest/download/podlink-alfred.alfredworkflow">Download and install the latest release</a>** 
 
-_You will need the [Powerpack](https://www.alfredapp.com/powerpack/) to enable this workflow._
+_You will need the [Alfred Powerpack](https://www.alfredapp.com/powerpack/) to enable this workflow._
 
 ## Usage
 1. Type the keyword `pod` followed by your query to generate results.
