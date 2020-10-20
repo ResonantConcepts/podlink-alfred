@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>link.pod.search</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>0F635C4D-EF27-4E06-BDF4-1898EE3039AB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>28180B02-C512-4E2F-BA05-E28A7C05E1A7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1304401-205F-426B-914D-E8AA5A2BFB82</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1BB1CD87-F91F-4887-9F8A-A99F2E730262</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E8058394-1462-41B7-A91D-909B07A34AF2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>28180B02-C512-4E2F-BA05-E28A7C05E1A7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1BB1CD87-F91F-4887-9F8A-A99F2E730262</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Nathan Gathright</string>
+	<key>description</key>
+	<string>Search PodLink for podcasts</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>PodLink Search</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>E8058394-1462-41B7-A91D-909B07A34AF2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>pod</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>index.js</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Search PodLink for podcasts</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0F635C4D-EF27-4E06-BDF4-1898EE3039AB</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"Open in PodLink","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/podlink","subtitle":""},{"imagefile":"icon-applepodcasts.png","title":"Open in Apple Podcasts","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/applepodcasts","subtitle":""},{"imagefile":"icon-breaker.png","title":"Open in Breaker","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/breaker","subtitle":""},{"imagefile":"icon-bullhorn.png","title":"Open in Bullhorn","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/bullhorn","subtitle":""},{"imagefile":"icon-castbox.png","title":"Open in Castbox","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/castbox","subtitle":""},{"imagefile":"icon-castro.png","title":"Open in Castro","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/castro","subtitle":""},{"imagefile":"icon-googlepodcasts.png","title":"Open in Google Podcasts","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/googlepodcasts","subtitle":""},{"imagefile":"icon-listennotes.png","title":"Open in Listen Notes","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/listennotes","subtitle":""},{"imagefile":"icon-overcast.png","title":"Open in Overcast","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/overcast","subtitle":""},{"imagefile":"icon-playerfm.png","title":"Open in Player FM","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/playerfm","subtitle":""},{"imagefile":"icon-pocketcasts.png","title":"Open in Pocket Casts","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/pocketcasts","subtitle":""},{"imagefile":"icon-podbean.png","title":"Open in Podbean","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/podbean"},{"imagefile":"icon-podcastaddict.png","title":"Open in Podcast Addict","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/podcastaddict","subtitle":""},{"imagefile":"icon-podcastguru.png","title":"Open in Podcast Guru","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/podcastguru","subtitle":""},{"imagefile":"icon-podchaser.png","title":"Open in Podchaser","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/podchaser","subtitle":""},{"imagefile":"icon-podhero.png","title":"Open in Podhero","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/podhero","subtitle":""},{"imagefile":"icon-podknife.png","title":"Open in Podknife","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/podknife","subtitle":""},{"imagefile":"icon-podnews.png","title":"Open in Podnews","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/podnews","subtitle":""},{"imagefile":"icon-radiopublic.png","title":"Open in RadioPublic","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/radiopublic","subtitle":""},{"imagefile":"icon-spotify.png","title":"Open in Spotify","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/spotify","subtitle":""},{"imagefile":"icon-stitcher.png","title":"Open in Stitcher","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/stitcher","subtitle":""},{"imagefile":"icon-rss.png","title":"Open in RSS","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/rss","subtitle":""}]</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>1BB1CD87-F91F-4887-9F8A-A99F2E730262</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>appleID</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>28180B02-C512-4E2F-BA05-E28A7C05E1A7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
+readonly remote_info_plist=''
+readonly workflow_url='nathangathright/alfred-producthunt-search'
+readonly download_type='github_release'
+readonly frequency_check='0'
+
+# FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
+function abort {
+  echo "${1}" &gt;&amp;2
+  exit 1
+}
+
+function url_exists {
+  curl --silent --location --output /dev/null --fail --range 0-0 "${1}"
+}
+
+function notification {
+  local -r notificator="$(find . -type d -name 'Notificator.app')"
+  if [[ -n "${notificator}" ]]; then
+    "${notificator}/Contents/Resources/Scripts/notificator" --message "${1}" --title "${alfred_workflow_name}" --subtitle 'A new version is available'
+    return
+  fi
+
+  local -r terminal_notifier="$(find . -type f -name 'terminal-notifier')"
+  if [[ -n "${terminal_notifier}" ]]; then
+    "${terminal_notifier}" -title "${alfred_workflow_name}" -subtitle 'A new version is available' -message "${1}"
+    return
+  fi
+
+  osascript -e "display notification \"${1}\" with title \"${alfred_workflow_name}\" subtitle \"A new version is available\""
+}
+
+# Local sanity checks
+readonly local_info_plist='info.plist'
+readonly local_version="$(/usr/libexec/PlistBuddy -c 'print version' "${local_info_plist}")"
+
+[[ -n "${local_version}" ]] || abort 'You need to set a workflow version in the configuration sheet.'
+[[ "${download_type}" =~ ^(direct|page|github_release)$ ]] || abort "'download_type' (${download_type}) needs to be one of 'direct', 'page', or 'github_release'."
+[[ "${frequency_check}" =~ ^[0-9]+$ ]] || abort "'frequency_check' (${frequency_check}) needs to be a number."
+
+# Check for updates
+if [[ $(find "${local_info_plist}" -mtime +"${frequency_check}"d) ]]; then
+  if ! url_exists "${remote_info_plist}"; then abort "'remote_info_plist' (${remote_info_plist}) appears to not be reachable."; fi # Remote sanity check
+
+  readonly tmp_file="$(mktemp)"
+  curl --silent --location --output "${tmp_file}" "${remote_info_plist}"
+  readonly remote_version="$(/usr/libexec/PlistBuddy -c 'print version' "${tmp_file}")"
+
+  if [[ "${local_version}" == "${remote_version}" ]]; then
+    touch "${local_info_plist}" # Reset timer by touching local file
+    exit 0
+  fi
+
+  if [[ "${download_type}" == 'page' ]]; then
+    notification 'Opening download page…'
+    open "${workflow_url}"
+    exit 0
+  fi
+
+  download_url="$([[ "${download_type}" == 'github_release' ]] &amp;&amp; curl --silent "https://api.github.com/repos/${workflow_url}/releases/latest" | grep 'browser_download_url' | head -1 | sed -E 's/.*browser_download_url": "(.*)"/\1/' || echo "${workflow_url}")"
+
+  if url_exists "${download_url}"; then
+    notification 'Downloading and installing…'
+    curl --silent --location --output "${HOME}/Downloads/${alfred_workflow_name}.alfredworkflow" "${download_url}"
+    open "${HOME}/Downloads/${alfred_workflow_name}.alfredworkflow"
+  else
+    abort "'workflow_url' (${download_url}) appears to not be reachable."
+  fi
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F1304401-205F-426B-914D-E8AA5A2BFB82</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>0F635C4D-EF27-4E06-BDF4-1898EE3039AB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>1BB1CD87-F91F-4887-9F8A-A99F2E730262</key>
+		<dict>
+			<key>xpos</key>
+			<integer>225</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>28180B02-C512-4E2F-BA05-E28A7C05E1A7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>160</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>E8058394-1462-41B7-A91D-909B07A34AF2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>F1304401-205F-426B-914D-E8AA5A2BFB82</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>OneUpdater</string>
+			<key>xpos</key>
+			<integer>230</integer>
+			<key>ypos</key>
+			<integer>155</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://alfred.pod.link/</string>
+</dict>
+</plist>

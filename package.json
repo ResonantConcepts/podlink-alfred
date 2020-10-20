@@ -1,0 +1,26 @@
+{
+  "name": "alfred-podlink",
+  "version": "1.0.0",
+  "description": "Search for podcasts from Alfred",
+  "license": "MIT",
+  "repository": "ResonantConcepts/podlink-alfred",
+  "author": {
+    "name": "Nathan Gathright",
+    "email": "nathan.gathright@gmail.com",
+    "url": "https://nathangathright.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "purge": "rm media/*"
+  },
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy"
+  ],
+  "dependencies": {
+    "alfy": "^0.10.0"
+  }
+}
