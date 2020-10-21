@@ -30,7 +30,7 @@ function download(filename, url, callback) {
 }
 
 (async () => {
-	const data = await alfy.fetch(`https://itunes.apple.com/search?term=${alfy.input}&limit=20&media=podcast`);
+	const data = await alfy.fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(alfy.input)}&limit=20&media=podcast`);
 
 	const results = data.results.map(result => {
 		const trackCount = (result.trackCount === 300) ? '300+' : result.trackCount;
