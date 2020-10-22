@@ -11,8 +11,9 @@ _You will need the [Alfred Powerpack](https://www.alfredapp.com/powerpack/) to e
 
 ## Usage
 1. Type the keyword `pod` followed by your query to generate results.
-2. Select a podcast to reveal a list of supported platforms.
-3. Select your preferred platform or type its name to filter the list.
+2. Press <kbd>⌘</kbd> + <kbd>C</kbd> to copy the PodLink URL of the selected show to you clipboard.
+3. Select a podcast to reveal a list of supported platforms.
+4. Select your preferred platform or type its name to filter the list.
    * Press <kbd>Return</kbd> to open the selected result in your browser.
    * Press <kbd>⌘</kbd> + <kbd>C</kbd> to copy the URL of the selected result to your clipboard.
 
