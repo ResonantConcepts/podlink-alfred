@@ -113,7 +113,7 @@
 				<key>queuemode</key>
 				<integer>2</integer>
 				<key>runningsubtext</key>
-				<string>Searching...</string>
+				<string>Searching…</string>
 				<key>script</key>
 				<string>./node_modules/.bin/run-node index.js "$1"</string>
 				<key>scriptargtype</key>
@@ -123,7 +123,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Search PodLink for podcasts</string>
+				<string>Search PodLink for '{query}'</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
