@@ -61,7 +61,7 @@
 	<key>createdby</key>
 	<string>Nathan Gathright</string>
 	<key>description</key>
-	<string>Search for podcasts (powered by PodLink)</string>
+	<string>Search for podcasts (powered by pod.link)</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -123,7 +123,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Search PodLink for '{query}'</string>
+				<string>Search pod.link for '{query}'</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -146,7 +146,7 @@
 				<key>fixedorder</key>
 				<false/>
 				<key>items</key>
-				<string>[{"title":"Open in PodLink","arg":"{var:podlink}","subtitle":""},{"imagefile":"icon-applepodcasts.png","title":"Open in Apple Podcasts","arg":"{var:podlink}\/listen\/applepodcasts","subtitle":""},{"imagefile":"icon-breaker.png","title":"Open in Breaker","arg":"{var:podlink}\/listen\/breaker","subtitle":""},{"imagefile":"icon-bullhorn.png","title":"Open in Bullhorn","arg":"{var:podlink}\/listen\/bullhorn","subtitle":""},{"imagefile":"icon-castbox.png","title":"Open in Castbox","arg":"{var:podlink}\/listen\/castbox","subtitle":""},{"imagefile":"icon-castro.png","title":"Open in Castro","arg":"{var:podlink}\/listen\/castro","subtitle":""},{"imagefile":"icon-googlepodcasts.png","title":"Open in Google Podcasts","arg":"{var:podlink}\/listen\/googlepodcasts","subtitle":""},{"imagefile":"icon-listennotes.png","title":"Open in Listen Notes","arg":"{var:podlink}\/listen\/listennotes","subtitle":""},{"imagefile":"icon-overcast.png","title":"Open in Overcast","arg":"{var:podlink}\/listen\/overcast","subtitle":""},{"imagefile":"icon-playerfm.png","title":"Open in Player FM","arg":"{var:podlink}\/listen\/playerfm","subtitle":""},{"imagefile":"icon-pocketcasts.png","title":"Open in Pocket Casts","arg":"{var:podlink}\/listen\/pocketcasts","subtitle":""},{"imagefile":"icon-podbean.png","title":"Open in Podbean","arg":"https:\/\/pod.link\/{var:appleID}\/listen\/podbean"},{"imagefile":"icon-podcastaddict.png","title":"Open in Podcast Addict","arg":"{var:podlink}\/listen\/podcastaddict","subtitle":""},{"imagefile":"icon-podcastguru.png","title":"Open in Podcast Guru","arg":"{var:podlink}\/listen\/podcastguru","subtitle":""},{"imagefile":"icon-podchaser.png","title":"Open in Podchaser","arg":"{var:podlink}\/listen\/podchaser","subtitle":""},{"imagefile":"icon-podhero.png","title":"Open in Podhero","arg":"{var:podlink}\/listen\/podhero","subtitle":""},{"imagefile":"icon-podknife.png","title":"Open in Podknife","arg":"{var:podlink}\/listen\/podknife","subtitle":""},{"imagefile":"icon-podnews.png","title":"Open in Podnews","arg":"{var:podlink}\/listen\/podnews","subtitle":""},{"imagefile":"icon-radiopublic.png","title":"Open in RadioPublic","arg":"{var:podlink}\/listen\/radiopublic","subtitle":""},{"imagefile":"icon-spotify.png","title":"Open in Spotify","arg":"{var:podlink}\/listen\/spotify","subtitle":""},{"imagefile":"icon-stitcher.png","title":"Open in Stitcher","arg":"{var:podlink}\/listen\/stitcher","subtitle":""},{"imagefile":"icon-rss.png","title":"Open in RSS","arg":"{var:podlink}\/listen\/rss","subtitle":""}]</string>
+				<string>[{"title":"Open in pod.link","arg":"{var:podlink}","subtitle":""},{"imagefile":"icon-applepodcasts.png","title":"Open in Apple Podcasts","arg":"{var:podlink}.apple","subtitle":""},{"imagefile":"icon-breaker.png","title":"Open in Breaker","arg":"{var:podlink}.breaker","subtitle":""},{"imagefile":"icon-castbox.png","title":"Open in Castbox","arg":"{var:podlink}.castbox","subtitle":""},{"imagefile":"icon-castro.png","title":"Open in Castro","arg":"{var:podlink}.castro","subtitle":""},{"imagefile":"icon-googlepodcasts.png","title":"Open in Google Podcasts","arg":"{var:podlink}.google","subtitle":""},{"imagefile":"icon-overcast.png","title":"Open in Overcast","arg":"{var:podlink}.overcast","subtitle":""},{"imagefile":"icon-playerfm.png","title":"Open in Player FM","arg":"{var:podlink}.playerfm","subtitle":""},{"imagefile":"icon-pocketcasts.png","title":"Open in Pocket Casts","arg":"{var:podlink}.pocketcasts","subtitle":""},{"imagefile":"icon-podcastaddict.png","title":"Open in Podcast Addict","arg":"{var:podlink}.podcastaddict","subtitle":""},{"imagefile":"icon-radiopublic.png","title":"Open in RadioPublic","arg":"{var:podlink}.radiopublic","subtitle":""},{"imagefile":"icon-spotify.png","title":"Open in Spotify","arg":"{var:podlink}.spotify","subtitle":""},{"imagefile":"icon-stitcher.png","title":"Open in Stitcher","arg":"{var:podlink}.stitcher","subtitle":""},{"imagefile":"icon-rss.png","title":"Open in RSS","arg":"{var:podlink}.rss","subtitle":""},{"imagefile":"icon-iheartradio.png","title":"Open in iHeartRadio","arg":"{var:pod.link}.iheartradio"}]</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -324,6 +324,6 @@ fi</string>
 	<key>version</key>
 	<string>1.4.2</string>
 	<key>webaddress</key>
-	<string>https://alfred.pod.link/</string>
+	<string>https://github.com/ResonantConcepts/podlink-alfred</string>
 </dict>
 </plist>
