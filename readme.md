@@ -25,7 +25,7 @@ Alfred learns and will sort the results based on usage. Here’s the list of pla
 ![Castbox](List%20Filter%20Images/icon-castbox.png)
 ![Castro](List%20Filter%20Images/icon-castro.png)
 ![Google Podcasts](List%20Filter%20Images/icon-googlepodcasts.png)
-![Listen Notes](List%20Filter%20Images/icon-listennotes.png)
+![iHeartRadio](List%20Filter%20Images/icon-iheartradio.png)
 ![Overcast](List%20Filter%20Images/icon-overcast.png)
 ![Player FM](List%20Filter%20Images/icon-playerfm.png)
 ![Pocket Casts](List%20Filter%20Images/icon-pocketcasts.png)
